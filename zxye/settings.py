@@ -29,12 +29,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'admin',
+    'mobile',
 ]
 
 MIDDLEWARE = [
@@ -73,12 +74,24 @@ WSGI_APPLICATION = 'zxye.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tank',
+        'NAME': 'zxye',
         'USER': 'root',
         'PASSWORD': 'Chao26351565',
         'HOST': 'zhenxiyinger.gnway.cc',
         'PORT': '3336',
+    },
+    'yinduo': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'ydzb3_sit_0615',
+        'USER': 'root',
+        'PASSWORD': 'c8c6a755b2',
+        'HOST': '121.43.118.86',
+        'PORT': '3306',
     }
+}
+DATABASE_ROUTERS = ['zxye.dbs.YinduoRouter']
+DATABASE_APPS_MAPPING = {
+    'yinduo': 'yinduo',
 }
 
 # Password validation

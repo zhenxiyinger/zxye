@@ -7,7 +7,7 @@
       <imported>true</imported>
       <remarks>$PROJECT_DIR$/zxye/settings.py</remarks>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://zhenxiyinger.gnway.cc:3336/tank</jdbc-url>
+      <jdbc-url>jdbc:mysql://zhenxiyinger.gnway.cc:3336/zxye</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />
