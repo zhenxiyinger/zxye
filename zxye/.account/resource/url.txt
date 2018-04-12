@@ -3,3 +3,11 @@ https://lnmp.org/
 http://idea.lanyus.com/
 http://hub.daocloud.io/
 http://www.eshop-switch.com/
+
+http://docs.30c.org/djangobook2/
+pip freeze >requirements.txt
+pip install -r requirements.txt
+
+du -h --max-depth=1du -h --max-depth=1
+
+header("Content-type: text/html; charset=utf-8");
