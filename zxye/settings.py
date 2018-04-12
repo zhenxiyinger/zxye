@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'admin',
     'mobile',
     'api',
+    'rest_framework_swagger',
 ]
 
 MIDDLEWARE = [

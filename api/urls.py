@@ -1,6 +1,7 @@
 from django.urls import path
-from . import views
+from api.views import index, activity
 
 urlpatterns = [
-    path('index/', views.index),
+    path('index/index/', index.index),
+    path('activity/index/', activity.index),
 ]
